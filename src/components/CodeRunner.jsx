@@ -15,7 +15,7 @@ export default function CodeRunner() {
     setOutput('');
 
     try {
-      const res = await fetch('http://localhost:4000/run', {
+      const res = await fetch('https://code-editor-backend-7f9j.onrender.com/run', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code, input }),
